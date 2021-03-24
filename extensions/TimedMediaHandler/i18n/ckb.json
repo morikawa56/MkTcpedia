@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Calak",
+			"Asoxor",
+			"Muhammed taha"
+		]
+	},
+	"timedmedia-source-file": "$1 سەرچاوە",
+	"timedmedia-source-audio-file-desc": "پەڕگەی $1 بنەڕەتی ($2)",
+	"right-transcode-reset": "ڕێکخستنەوەی ڤیدیۆ سەرنەکوتووەکان یان ترانسکۆدکراوەکان ھەتا دیسان بچنەوە ناو ڕیزی کارەوە.",
+	"right-transcode-status": "دیتنی [[تایبەت:TimedMediaHandler|زانیاری لەمەڕ چالاکیی ترانسکۆدی ھەنووکەیی]]"
+}

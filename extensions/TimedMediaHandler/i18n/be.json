@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Чаховіч Уладзіслаў"
+		]
+	},
+	"timedmedia-source-file": "Крыніца $1",
+	"timedmedia-source-audio-file-desc": "Арыгінальны $1-файл ($2)"
+}

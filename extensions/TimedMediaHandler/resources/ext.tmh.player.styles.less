@@ -1,0 +1,77 @@
+.client-js {
+	/* We force the size of player to avoid reflows after loading the JS */
+	audio.video-js {
+		height: 3em;
+		font-size: 10px;
+	}
+
+	/* We hide the native controls, before we load the custom controls  */
+	audio.video-js::-webkit-media-controls-panel,
+	video.video-js::-webkit-media-controls-panel {
+		display: none;
+	}
+}
+
+div.thumbinner.mw-overflow {
+	/* We want to overflow, but we need to make sure we still
+	 * create a new block formatting context */
+	overflow: visible;
+	display: table-cell;
+}
+
+/*
+ * Make video-js behave like standard <video><audio> elements
+ * The thumbinner check works around a width interaction for
+ * thumbnail style adjustments in Minerva mobile skin.
+ */
+*:not( .thumbinner ) > .video-js.video-js:not( .vjs-fullscreen ) {
+	display: inline-block;
+	vertical-align: initial;
+}
+
+/* Resets styling on the resolution button. Our content linewraps */
+.vjs-resolution-button ul.vjs-menu-content.vjs-menu-content {
+	margin-left: -6em;
+	width: 100% !important; /* stylelint-disable-line declaration-no-important */
+}
+
+/* Audio player skin */
+.video-js.vjs-audio {
+	height: 3em;
+
+	.vjs-big-play-button {
+		display: none;
+	}
+	.vjs-control-bar {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.vjs-loading-spinner {
+		display: none;
+	}
+
+	&.vjs-waiting .vjs-progress-holder:not( .vjs-seeking ) {
+		height: 0.5em;
+		background-image: repeating-linear-gradient( -45deg, #73859f, #73859f 11px, #eee 10px, #eee 20px );
+		border-radius: 3px;
+		background-size: 28px 28px;
+
+		transition: height 0.5s;
+		animation: vjs-slider-indeterminate 0.5s linear infinite;
+
+		.vjs-play-progress {
+			display: none;
+		}
+	}
+}
+
+@keyframes vjs-slider-indeterminate {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 28px 0;
+	}
+}

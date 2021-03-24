@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>SoundManager 2: Bar UI Player Self Host via KnockoutJS</title>
+        <meta name="viewport" content="width=500, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/win-ring-bundled.min.css" />
+    </head>
+
+    <body>
+    <div class="sm2-loading-stub">
+        <div class="loader">
+            <div class="box">
+                <div class="circle"></div>
+            </div>
+            <div class="box">
+                <div class="circle"></div>
+            </div>
+            <div class="box">
+                <div class="circle"></div>
+            </div>
+            <div class="box">
+                <div class="circle"></div>
+            </div>
+            <div class="box">
+                <div class="circle"></div>
+            </div>
+            <div class="box">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div data-bind='component: {
+        name: "sm2-player-fx",
+        params: {
+            "schemaVersion": 1,
+            "backgroundColor": "#66ccff",
+            "foregroundColor": "#fff",
+            "trackColor": "rgba(35,61,22,.4)",
+            "loop": false,
+            "autoPlay": true,
+            "isPlaylistOpen": true,
+            "playlist":
+            [
+                {
+                    "audioFileUrl": "http://localhost:10050/02 - Coldplay - Hurts Like Heaven.mp3",
+                    "lrcFileUrl": "http://localhost:10050/Coldplay - Hurts Like Heaven.lrc",
+                    "ignoreLrcMetadata": true,
+                    "title": "Hurts Like Heaven",
+                    "album": "Mylo Xyloto",
+                    "artist": "Coldplay",
+                    "isExplicit": false,
+                    "coverImageUrl": "http://localhost:10050/Coldplay - Mylo Xyloto.jpg"
+                },
+                {
+                    "audioFileUrl": "https://mmixprdsjc.blob.core.windows.net/music/1171_6E583930909056E6!61165.mp3",
+                    "lrcFileUrl": "http://localhost:10050/Katy%20Perry%20-%20Teenage%20Dream.lrc",
+                    "ignoreLrcMetadata": true,
+                    "isExplicit": false
+                },
+                {
+                    "audioFileUrl": "https://mmixprdsjc.blob.core.windows.net/music/09%20No%20Words.mp3",
+                    "lrcFileUrl": "http://localhost:10050/The Script - No Words.lrc",
+                    "title": "No Words",
+                    "album": "#3",
+                    "artist": "The Script",
+                    "isExplicit": false,
+                    "coverImageUrl": "http://localhost:10050/%233.jpg"
+                },
+                {
+                    "audioFileUrl": "https://mmixprdsjc.blob.core.windows.net/music/1163_6E583930909056E6!61220.mp3"
+                },
+                {
+                    "audioFileUrl": "https://imbushuos3.azureedge.net/Snippets/Moegirlpedia/Demo.m4a"
+                },
+                {
+                    "audioFileUrl": "https://static.mengniang.org/common/5/55/Kongo_song.mp3"
+                },
+                {
+                    "audioFileUrl": "https://static.mengniang.org/common/f/fd/Zhenshoufu_zaochen.mp3"
+                }
+            ]
+        }
+    }'>
+
+    </div>
+
+    <div data-bind='component: {
+        name: "sm2-player-fx",
+        params: {
+            "schemaVersion": 1,
+            "loop": false,
+            "autoPlay": false,
+            "playlist":
+            [
+                {
+                    "audioFileUrl": "https://mmixprdsjc.blob.core.windows.net/music/02%20-%20Coldplay%20-%20Hurts%20Like%20Heaven.mp3",
+                    "lrcFileUrl": "http://localhost:10050/Coldplay - Hurts Like Heaven.lrc",
+                    "ignoreLrcMetadata": true,
+                    "title": "Hurts Like Heaven",
+                    "album": "Mylo Xyloto",
+                    "artist": "Coldplay",
+                    "isExplicit": false,
+                    "coverImageUrl": "http://localhost:10050/Coldplay - Mylo Xyloto.jpg"
+                }
+            ]
+        }
+    }'>
+
+    </div>
+
+    <div data-bind='component: {
+        name: "sm2-player-fx",
+        params: {"schemaVersion":1,"compactMode":true,"loop":false,"autoPlay":false,"playlist":[{"audioFileUrl":"http://localhost:10050/09 No Words.mp3","lrcFileUrl":"https://ibwordpressimage.s3.amazonaws.com/Snippets/Lrc/The%20Script%20-%20No%20Words.lrc","ignoreLrcMetadata":true,"title":"No Words","album":"#3","artist":"The Script","isExplicit":false}]}
+    }'>
+
+    </div>
+    <script src="CoreServices/DebugConfig.js"></script>
+    <script src="bin/Debug/StubLoader.min.js"></script>
+    <script async src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    </body>
+
+</html>

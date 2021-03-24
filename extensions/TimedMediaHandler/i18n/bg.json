@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Borislav",
+			"DCLXVI",
+			"Spiritia",
+			"StanProg",
+			"Лорд Бъмбъри",
+			"Termininja"
+		]
+	},
+	"timedmediahandler-desc": "Приложение за аудио, видео и timed text, поддържащ форматите WebM, Ogg Theora, Vorbis, srt",
+	"timedmedia-ogg-short-audio": "Ogg $1 звуков файл, $2",
+	"timedmedia-ogg-short-video": "Ogg $1 видео файл, $2",
+	"timedmedia-ogg-long-audio": "Ogg $1 звуков файл, продължителност $2, $3",
+	"timedmedia-ogg-long-video": "Ogg $1 видео файл, продължителност $2, $4×$5 пиксела, $3",
+	"timedmedia-ogg-long-general": "Мултимедиен файл в ogg формат с дължина $2, $3",
+	"timedmedia-ogg-long-error": "Невалиден ogg файл: $1",
+	"timedmedia-more": "Повече...",
+	"timedmedia-dismiss": "Затваряне",
+	"timedmedia-download": "Изтегляне на файла",
+	"timedmedia-desc-link": "Информация за файла",
+	"timedmedia-direct-link": "Изтегляне",
+	"timedmedia-percent-done": "Около $1% завършени",
+	"timedmedia-source-file": "Източник на $1",
+	"timedmedia-source-audio-file-desc": "Оригинален $1-файл ($2)",
+	"timedmediahandler": "Аудио и видео файлове",
+	"log-name-timedmediahandler": "Дневник на TimedMediaHandler",
+	"log-description-timedmediahandler": "Това е дневник на действия, свързани с timed media transcodes."
+}

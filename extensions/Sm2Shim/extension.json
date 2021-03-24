@@ -1,0 +1,36 @@
+{
+    "@doc": "Please refer to README.md for configuration and usage",
+    "name": "Sm2Shim",
+    "version": "3100.304.457.10400",
+    "author": [
+        "[https://imbushuo.net Bingxing Wang(The Little Moe New LLC)]",
+        "[https://lmn.cat The Little Moe New LLC]",
+        "Scott Schiller"
+    ],
+    "url": "https://github.com/imbushuo/MediaWiki-Sm2Shim",
+    "descriptionmsg": "sm2shim-desc",
+    "license-name": "BSD-2-Clause",
+    "type": "parserhook",
+    "AutoloadClasses": {
+        "Sm2ShimConstants": "Sm2ShimConstants.php",
+        "TheLittleMoeNewLlc\\Sm2Shim\\Exceptions\\InvalidDataException": "Exceptions/InvalidDataException.php",
+        "TheLittleMoeNewLlc\\Sm2Shim\\Models\\PlaylistItem": "Models/Sm2Shim.PlaylistItem.php",
+        "TheLittleMoeNewLlc\\Sm2Shim\\Models\\Playlist": "Models/Sm2Shim.PlaylistItem.php",
+        "TheLittleMoeNewLlc\\Sm2Shim\\Hooks\\ModernSoundManager2Hooks": "Hooks/ModernSoundManager2Hooks.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": [
+            "TheLittleMoeNewLlc\\Sm2Shim\\Hooks\\ModernSoundManager2Hooks::onParserSetup"
+        ]
+    },
+    "MessagesDirs": {
+        "Sm2Shim": [
+            "i18n"
+        ]
+    },
+    "config": {
+        "Sm2Shim_ExternalCDNEndpoint": "//mmixstaticassets.azureedge.net/Sm2ShimRM",
+        "Sm2Shim_ExternalCDNJsVersionControlId": "170304-0456"
+    },
+    "manifest_version": 1
+}

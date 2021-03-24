@@ -1,0 +1,23 @@
+/** Collapsible tables *********************************************************
+ *
+ *  Description: Allows tables to be collapsed, showing only the header. See
+ *                         http://www.mediawiki.org/wiki/Manual:Collapsible_tables.
+ *  Maintainers: [[en:User:R. Koot]]
+ */
+
+table.collapsed tr.collapsible {
+    display: none;
+}
+
+.collapseButton {
+    float: right;
+    font-weight: normal;
+    text-align: right;
+    width: auto;
+}
+
+.inputError {
+    box-shadow: red 0px 0px 8px;
+    border: 1px solid red;
+    padding: 2px 1px;
+}

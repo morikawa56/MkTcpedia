@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mikalai Udodau",
+			"Macofe",
+			"Artsiom91"
+		]
+	},
+	"templatesandbox": "Пясочніца для шаблонаў",
+	"templatesandbox-suffix": "пясочніца",
+	"templatesandbox-legend": "Пясочніца для шаблонаў",
+	"templatesandbox-editform-legend": "Папярэдні прагляд старонкі з гэтым шаблонам",
+	"templatesandbox-editform-page-label": "Назва старонкі",
+	"templatesandbox-editform-view-label": "Як будзе"
+}

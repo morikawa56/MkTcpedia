@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01",
+			"Srdjan m",
+			"Macofe",
+			"Сербијана",
+			"Obsuser",
+			"Acamicamacaraca"
+		]
+	},
+	"templatesandbox": "Песак за шаблоне",
+	"templatesandbox-suffix": "пијесак",
+	"templatesandbox-editform-legend": "Претпреглед странице са овим шаблоном",
+	"templatesandbox-editform-page-label": "Име странице",
+	"templatesandbox-editform-view-label": "Претпреглед",
+	"templatesandbox-preview": "Преглед $2",
+	"templatesandbox-previewnote": "'''Ово је само преглед [[:$1]].'''\nВаше измене још нису сачуване!",
+	"templatesandbox-editform-need-title": "Да би се приказао претпреглед друге странице са овим шаблоном, наслов странице мора да буде одређен."
+}

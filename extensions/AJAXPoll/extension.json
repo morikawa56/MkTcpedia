@@ -1,0 +1,69 @@
+{
+	"name": "AJAX Poll",
+	"version": "1.9.0",
+	"author": [
+		"Dariusz Siedlecki",
+		"Jack Phoenix",
+		"Thomas Gries"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:AJAX_Poll",
+	"descriptionmsg": "ajaxpoll-desc",
+	"type": "parserhook",
+	"callback": "AJAXPoll::onRegistration",
+	"GroupPermissions": {
+		"*": {
+			"ajaxpoll-vote": false,
+			"ajaxpoll-view-results": false,
+			"ajaxpoll-view-results-before-vote": false
+		},
+		"user": {
+			"ajaxpoll-vote": true,
+			"ajaxpoll-view-results": true
+		}
+	},
+	"AvailableRights": [
+		"ajaxpoll-vote",
+		"ajaxpoll-view-results",
+		"ajaxpoll-view-results-before-vote"
+	],
+	"MessagesDirs": {
+		"AJAXPoll": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"AJAXPoll": "includes/AJAXPoll.class.php"
+	},
+	"ResourceModules": {
+		"ext.ajaxpoll": {
+			"group": "ext.ajaxpoll",
+			"scripts": [
+				"js/ajaxpoll.js"
+			],
+			"styles": [
+				"css/ajaxpoll.css"
+			],
+			"dependencies": [],
+			"messages": [
+				"ajaxpoll-submitting"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "AJAXPoll/resources"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"AJAXPoll::onParserInit"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"AJAXPoll::onLoadExtensionSchemaUpdates"
+		]
+	},
+	"TrackingCategories": [
+		"ajaxpoll-tracking-category"
+	],
+	"config": {},
+	"manifest_version": 1
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"OC Ripper"
+		]
+	},
+	"timedmedia-source-file": "$1 izvor",
+	"timedmedia-source-audio-file-desc": "Originalna $1 datoteka ($2)"
+}
